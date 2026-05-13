@@ -51,12 +51,22 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
     const unique = [...new Set(sessions.map((session) => monthKey(session.start_time)))];
     return unique.map((key) => {
       const [year, monthNumber] = key.split('-').map(Number);
+      const count = sessions.filter((session) => (
+        monthKey(session.start_time) === key &&
+        session.work_type !== 'day_off' &&
+        Number(session.total_hours || 0) > 0
+      )).length;
       return {
         key,
+        count,
         label: new Intl.DateTimeFormat('ru-RU', { month: 'short' }).format(new Date(year, monthNumber - 1, 1)).replace('.', ''),
       };
     });
   }, [sessions]);
+  const totalWorkSessions = useMemo(
+    () => sessions.filter((session) => session.work_type !== 'day_off' && Number(session.total_hours || 0) > 0).length,
+    [sessions],
+  );
 
   const filtered = useMemo(() => sessions.filter((session) => {
     const haystack = `${session.notes} ${workTypeLabels[session.work_type] || ''} ${formatDate(session.start_time)}`.toLowerCase();
@@ -105,7 +115,7 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
             month === 'all' ? 'border-sky/40 bg-sky/15 text-sky' : 'border-white/10 bg-white/7 text-white/55'
           }`}
         >
-          Все месяцы
+          Все месяцы <span className="ml-1 text-white/55">{totalWorkSessions}</span>
         </button>
         {months.map((item) => (
           <button
@@ -116,7 +126,7 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
               month === item.key ? 'border-sky/40 bg-sky/15 text-sky' : 'border-white/10 bg-white/7 text-white/55'
             }`}
           >
-            {item.label}
+            {item.label} <span className="ml-1 text-white/55">{item.count}</span>
           </button>
         ))}
       </div>
