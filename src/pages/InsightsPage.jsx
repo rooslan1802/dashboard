@@ -23,7 +23,7 @@ export function InsightsPage({ sessions, activeSession, settings }) {
         <div className="mt-6 grid grid-cols-3 gap-3">
           <Score label="Риск выгорания" value={insights.burnoutScore} tone={color} />
           <Score label="Усталость" value={insights.fatigueScore} tone="text-amber" />
-          <Score label="Продуктивность" value={insights.productivity} tone="text-mint" />
+          <Score label="Продуктив" value={insights.productivity} tone="text-mint" />
         </div>
         <div className="mt-4 rounded-2xl border border-white/8 bg-black/15 p-3 text-xs leading-5 text-white/50">
           Оценка считается за последние 14 дней: средняя смена, доля переработок, дни подряд и доля выходных.

@@ -11,10 +11,10 @@ import { SettingsPage } from './pages/SettingsPage';
 import { ToastStack } from './components/ToastStack';
 
 const tabs = [
-  { id: 'dashboard', label: 'Главная', icon: Clock3 },
-  { id: 'history', label: 'История', icon: History },
   { id: 'analytics', label: 'Аналитика', icon: BarChart3 },
+  { id: 'history', label: 'История', icon: History },
   { id: 'insights', label: 'Инсайты', icon: Brain },
+  { id: 'dashboard', label: 'Главная', icon: Clock3 },
   { id: 'settings', label: 'Настройки', icon: Settings },
 ];
 

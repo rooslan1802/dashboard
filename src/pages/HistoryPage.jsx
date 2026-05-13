@@ -151,7 +151,9 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
                         <Pencil size={16} />
                       </button>
                       <button
-                        onClick={() => deleteSession(session.id)}
+                        onClick={() => {
+                          if (confirm('Точно удалить эту запись?')) deleteSession(session.id);
+                        }}
                         className="grid h-9 w-9 place-items-center rounded-2xl bg-coral/12 text-coral active:scale-95"
                         title="Удалить"
                       >
