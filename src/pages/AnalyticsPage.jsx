@@ -18,9 +18,10 @@ export function AnalyticsPage({ sessions, settings }) {
   const daily = buildDailyChart(sessions);
   const weekly = buildWeeklyChart(sessions);
   const months = buildMonthComparison(sessions);
-  const avg = sessions.length ? sessions.reduce((sum, s) => sum + s.total_hours, 0) / sessions.length : 0;
-  const overtime = sessions.filter((s) => s.total_hours > Number(settings.overtimeThreshold || 8)).length;
-  const weekends = sessions.filter((s) => [0, 6].includes(new Date(s.start_time).getDay())).length;
+  const workSessions = sessions.filter((session) => session.work_type !== 'day_off' && session.total_hours > 0);
+  const avg = workSessions.length ? workSessions.reduce((sum, s) => sum + s.total_hours, 0) / workSessions.length : 0;
+  const overtime = workSessions.filter((s) => s.total_hours > Number(settings.overtimeThreshold || 8)).length;
+  const daysOff = sessions.filter((s) => s.work_type === 'day_off').length;
   const avgTimes = averageStartEnd(sessions);
 
   return (
@@ -28,7 +29,7 @@ export function AnalyticsPage({ sessions, settings }) {
       <div className="grid grid-cols-2 gap-3">
         <MetricCard label="Средняя смена" value={formatHours(avg)} />
         <MetricCard label="Переработки" value={overtime} tone="text-coral" />
-        <MetricCard label="Смены в выходные" value={weekends} tone="text-sky" />
+        <MetricCard label="Выходных" value={daysOff} tone="text-sky" />
         <MetricCard label="Средний старт" value={avgTimes.start} />
       </div>
 

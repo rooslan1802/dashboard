@@ -7,6 +7,9 @@ const byDate = (sessions) =>
     return acc;
   }, {});
 
+const isDayOff = (session) => session.work_type === 'day_off';
+const isWorkSession = (session) => !isDayOff(session) && Number(session.total_hours || 0) > 0;
+
 export const getSessionStatus = (session, settings = {}) => {
   const overtimeThreshold = Number(settings.overtimeThreshold || 8);
   if (session.work_type === 'day_off') return 'Выходной';
@@ -48,7 +51,7 @@ export const buildDashboardStats = (sessions, activeSession, settings) => {
 
   return [
     { label: 'Сегодня', value: formatHours(todayHours), hint: todayHours > Number(settings.overtimeThreshold || 8) ? 'есть переработка' : 'в пределах нормы' },
-    { label: 'Эта неделя', value: formatHours(weekHours), hint: `${sessions.filter((s) => new Date(s.start_time) >= weekStart).length} смен` },
+    { label: 'Эта неделя', value: formatHours(weekHours), hint: `${sessions.filter((s) => new Date(s.start_time) >= weekStart && isWorkSession(s)).length} смен` },
     { label: 'Этот месяц', value: formatHours(monthHours), hint: `${sessions.filter((s) => new Date(s.start_time) >= monthStart && s.total_hours > Number(settings.overtimeThreshold || 8)).length} переработок` },
     { label: 'Дней подряд', value: String(streak), hint: streak >= 6 ? 'пора на отдых' : 'ритм стабильный' },
     { label: 'Всего часов', value: formatHours(totalHours), hint: `${sessions.length} записей` },
@@ -56,7 +59,7 @@ export const buildDashboardStats = (sessions, activeSession, settings) => {
 };
 
 export const getWorkStreak = (sessions, activeSession) => {
-  const days = new Set(sessions.filter((s) => s.total_hours > 0).map((s) => dateKey(s.start_time)));
+  const days = new Set(sessions.filter(isWorkSession).map((s) => dateKey(s.start_time)));
   if (activeSession) days.add(dateKey(activeSession.start_time));
   if (!days.size) return 0;
 
@@ -126,13 +129,20 @@ export const averageStartEnd = (sessions) => {
 
 export const buildInsights = (sessions, activeSession, settings = {}) => {
   const overtimeThreshold = Number(settings.overtimeThreshold || 8);
-  const recent = sessions.filter((session) => new Date(session.start_time) >= addDays(new Date(), -14));
-  const daysWorked = new Set(recent.map((s) => dateKey(s.start_time))).size + (activeSession ? 1 : 0);
-  const daysOff = Math.max(0, 14 - daysWorked);
-  const avgHours = recent.length
-    ? recent.reduce((sum, session) => sum + Number(session.total_hours || 0), 0) / recent.length
+  const latest = sessions.length
+    ? new Date(Math.max(...sessions.map((session) => new Date(session.start_time).getTime())))
+    : new Date();
+  const windowStart = addDays(startOfDay(latest), -13);
+  const recent = sessions.filter((session) => {
+    const date = new Date(session.start_time);
+    return date >= windowStart && date <= latest;
+  });
+  const workRecent = recent.filter(isWorkSession);
+  const daysOff = new Set(recent.filter(isDayOff).map((s) => dateKey(s.start_time))).size;
+  const avgHours = workRecent.length
+    ? workRecent.reduce((sum, session) => sum + Number(session.total_hours || 0), 0) / workRecent.length
     : 0;
-  const overtimeDays = recent.filter((session) => session.total_hours > overtimeThreshold).length;
+  const overtimeDays = workRecent.filter((session) => session.total_hours > overtimeThreshold).length;
   const streak = getWorkStreak(sessions, activeSession);
 
   const burnoutScore = Math.min(100, Math.round(streak * 9 + avgHours * 6 + overtimeDays * 7 + Math.max(0, 4 - daysOff) * 8));
@@ -141,9 +151,15 @@ export const buildInsights = (sessions, activeSession, settings = {}) => {
   const level = burnoutScore >= 72 ? 'red' : burnoutScore >= 45 ? 'yellow' : 'green';
 
   const recommendations = [
-    daysOff <= 2 ? `За последние 14 дней у вас было только ${daysOff} выходных.` : `За последние 14 дней было ${daysOff} дней отдыха.`,
-    streak >= 6 ? 'После 6 дней подряд средняя продуктивность обычно снижается.' : 'Ритм работы выглядит устойчивым.',
-    avgHours >= 9 ? 'Средняя длительность смены высокая, запланируйте короткий день.' : 'Средняя длительность смены в здоровом диапазоне.',
+    daysOff >= 5
+      ? `За последние 14 дней было ${daysOff} выходных. Восстановление выглядит нормальным.`
+      : `За последние 14 дней было ${daysOff} выходных. Стоит заранее поставить день без работы.`,
+    overtimeDays >= 4
+      ? `${overtimeDays} дня с переработкой за период. Лучше не ставить тяжелые задачи подряд.`
+      : `Переработок немного: ${overtimeDays}. Нагрузка пока контролируемая.`,
+    avgHours >= overtimeThreshold
+      ? `Средняя рабочая смена ${avgHours.toFixed(1)}ч — выше выбранного порога. Запланируйте короткую смену.`
+      : `Средняя рабочая смена ${avgHours.toFixed(1)}ч — ниже порога переработки.`,
   ];
 
   return {

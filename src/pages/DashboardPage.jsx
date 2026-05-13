@@ -18,13 +18,24 @@ export function DashboardPage({ sessions, activeSession, dashboardStats, startWo
   );
 
   const recent = sessions.slice(0, 3);
+  const lastWork = sessions.find((session) => session.work_type !== 'day_off' && session.total_hours > 0);
+  const monthHours = dashboardStats.find((stat) => stat.label === 'Этот месяц')?.value || '0ч 00м';
 
   return (
     <div className="space-y-4">
       <GlassCard className="relative overflow-hidden">
         <div className="absolute right-4 top-4 h-24 w-24 rounded-full bg-mint/20 blur-2xl" />
         <p className="text-sm text-white/55">{formatDate(now, { weekday: 'long' })}</p>
-        <h2 className="mt-2 text-3xl font-semibold leading-tight">Привет. Какой сегодня ритм?</h2>
+        <div className="mt-3 grid grid-cols-[1fr_auto] items-end gap-4">
+          <div>
+            <p className="text-sm text-white/45">В этом месяце</p>
+            <h2 className="mt-1 text-4xl font-semibold leading-none">{monthHours}</h2>
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-white/[0.07] px-3 py-2 text-right">
+            <p className="text-[11px] uppercase tracking-[0.18em] text-white/35">последняя</p>
+            <p className="mt-1 text-sm font-medium text-white/80">{lastWork ? formatHours(lastWork.total_hours) : 'нет смен'}</p>
+          </div>
+        </div>
         <div className="mt-6 rounded-[28px] border border-white/10 bg-black/20 p-5">
           <div className="flex items-center justify-between">
             <span className="text-sm text-white/50">{activeSession ? 'Сейчас в работе' : 'Готово к старту'}</span>
@@ -77,7 +88,9 @@ export function DashboardPage({ sessions, activeSession, dashboardStats, startWo
             <div key={session.id} className="flex items-center justify-between rounded-2xl bg-white/[0.055] px-4 py-3">
               <div>
                 <p className="text-sm font-medium">{formatDate(session.start_time)}</p>
-                <p className="text-xs text-white/45">{formatTime(session.start_time)} - {formatTime(session.end_time)}</p>
+                <p className="text-xs text-white/45">
+                  {session.work_type === 'day_off' ? 'Без смены' : `${formatTime(session.start_time)} - ${formatTime(session.end_time)}`}
+                </p>
               </div>
               <span className="text-sm text-mint">{formatHours(session.total_hours)}</span>
             </div>

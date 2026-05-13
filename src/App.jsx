@@ -47,7 +47,7 @@ export default function App() {
         <header className="sticky top-0 z-30 border-b border-white/10 bg-ink/70 px-5 pb-3 pt-[max(1rem,env(safe-area-inset-top))] backdrop-blur-2xl">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-xs uppercase tracking-[0.28em] text-white/40">Life Analytics</p>
+              <p className="text-xs uppercase tracking-[0.28em] text-white/40">Job Analytics</p>
               <h1 className="mt-1 text-xl font-semibold">{tabs.find((tab) => tab.id === activeTab)?.label}</h1>
             </div>
             <div className="grid h-11 w-11 place-items-center rounded-2xl border border-white/10 bg-white/10 shadow-glow">

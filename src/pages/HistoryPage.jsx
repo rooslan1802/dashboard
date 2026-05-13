@@ -1,4 +1,4 @@
-import { Pencil, Search, Trash2 } from 'lucide-react';
+import { ArrowDown, ArrowUp, Pencil, Search, Trash2 } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { EmptyState } from '../components/EmptyState';
 import { SessionModal } from '../components/SessionModal';
@@ -23,6 +23,11 @@ const workTypeLabels = {
 const monthKey = (value) => {
   const date = new Date(value);
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+};
+
+const sessionTimeLabel = (session) => {
+  if (session.work_type === 'day_off') return 'Без смены';
+  return `${formatTime(session.start_time)} - ${formatTime(session.end_time)}`;
 };
 
 export function HistoryPage({ sessions, settings, saveSession, deleteSession }) {
@@ -57,12 +62,12 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
   return (
     <div className="space-y-4">
       <div className="relative">
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white/35" size={18} />
+        <Search className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2 text-white/35" size={17} />
         <input
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="Поиск по заметкам, типу, дате"
-          className="input h-14 pl-11"
+          className="input h-14 pl-14"
         />
       </div>
 
@@ -109,6 +114,8 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
         <div className="space-y-3">
           {filtered.map((session) => {
             const status = getSessionStatus(session, settings);
+            const note = session.notes?.trim();
+            const showNote = note && note !== status && note !== workTypeLabels[session.work_type];
             return (
               <div key={session.id} className="rounded-3xl border border-white/10 bg-white/[0.07] px-4 py-3 shadow-soft backdrop-blur-2xl">
                 <div className="flex items-center gap-3">
@@ -118,9 +125,9 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
                       <span className={`shrink-0 rounded-full border px-2.5 py-1 text-[11px] ${getStatusTone(status)}`}>{status}</span>
                     </div>
                     <p className="mt-1 text-sm text-white/50">
-                      {formatTime(session.start_time)} - {formatTime(session.end_time)} · {workTypeLabels[session.work_type] || 'Работа'}
+                      {sessionTimeLabel(session)} · {workTypeLabels[session.work_type] || 'Работа'}
                     </p>
-                    {session.notes && <p className="mt-1 truncate text-sm text-white/45">{session.notes}</p>}
+                    {showNote && <p className="mt-1 truncate text-sm text-white/45">{note}</p>}
                   </div>
                   <div className="shrink-0 text-right">
                     <p className="font-semibold text-mint">{formatHours(session.total_hours)}</p>
@@ -151,6 +158,24 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
       )}
 
       <SessionModal open={Boolean(editing)} mode="edit" session={editing} onClose={() => setEditing(null)} onSave={saveSession} />
+      <div className="fixed bottom-28 right-[max(1rem,calc((100vw-28rem)/2+1rem))] z-30 grid gap-2">
+        <button
+          type="button"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="grid h-12 w-12 place-items-center rounded-full border border-white/12 bg-panel/90 text-mint shadow-soft backdrop-blur-2xl active:scale-95"
+          title="Вверх"
+        >
+          <ArrowUp size={19} />
+        </button>
+        <button
+          type="button"
+          onClick={() => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' })}
+          className="grid h-12 w-12 place-items-center rounded-full border border-white/12 bg-panel/90 text-sky shadow-soft backdrop-blur-2xl active:scale-95"
+          title="Вниз"
+        >
+          <ArrowDown size={19} />
+        </button>
+      </div>
     </div>
   );
 }
