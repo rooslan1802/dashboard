@@ -145,9 +145,34 @@ export const buildInsights = (sessions, activeSession, settings = {}) => {
   const overtimeDays = workRecent.filter((session) => session.total_hours > overtimeThreshold).length;
   const streak = getWorkStreak(sessions, activeSession);
 
-  const burnoutScore = Math.min(100, Math.round(streak * 9 + avgHours * 6 + overtimeDays * 7 + Math.max(0, 4 - daysOff) * 8));
-  const fatigueScore = Math.min(100, Math.round(avgHours * 8 + streak * 5 + overtimeDays * 10));
-  const productivity = Math.max(35, Math.min(98, Math.round(88 - Math.max(0, avgHours - 8) * 5 - Math.max(0, streak - 5) * 4)));
+  const totalDays = Math.max(1, new Set(recent.map((s) => dateKey(s.start_time))).size);
+  const workDays = new Set(workRecent.map((s) => dateKey(s.start_time))).size;
+  const restRatio = daysOff / totalDays;
+  const overtimeRatio = workRecent.length ? overtimeDays / workRecent.length : 0;
+  const avgPressure = Math.max(0, (avgHours - overtimeThreshold) / Math.max(1, overtimeThreshold));
+  const streakPressure = Math.max(0, (streak - 5) / 5);
+
+  const fatigueScore = Math.min(100, Math.round(
+    28 +
+    avgPressure * 30 +
+    overtimeRatio * 24 +
+    streakPressure * 18 -
+    restRatio * 18,
+  ));
+  const burnoutScore = Math.min(100, Math.round(
+    22 +
+    fatigueScore * 0.45 +
+    overtimeRatio * 22 +
+    Math.max(0, 0.28 - restRatio) * 55 +
+    streakPressure * 16,
+  ));
+  const productivity = Math.max(35, Math.min(98, Math.round(
+    86 -
+    avgPressure * 16 -
+    overtimeRatio * 10 -
+    Math.max(0, fatigueScore - 65) * 0.25 +
+    Math.min(restRatio, 0.35) * 12,
+  )));
   const level = burnoutScore >= 72 ? 'red' : burnoutScore >= 45 ? 'yellow' : 'green';
 
   const recommendations = [
@@ -168,6 +193,10 @@ export const buildInsights = (sessions, activeSession, settings = {}) => {
     productivity,
     level,
     daysOff,
+    workDays,
+    totalDays,
+    restRatio,
+    overtimeRatio,
     avgHours,
     overtimeDays,
     recommendations,

@@ -1,5 +1,5 @@
 import { ArrowDown, ArrowUp, Pencil, Search, Trash2 } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { EmptyState } from '../components/EmptyState';
 import { SessionModal } from '../components/SessionModal';
 import { formatDate, formatHours, formatTime } from '../utils/date';
@@ -35,6 +35,17 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
   const [filter, setFilter] = useState('all');
   const [month, setMonth] = useState('all');
   const [editing, setEditing] = useState(null);
+  const [nearBottom, setNearBottom] = useState(false);
+
+  useEffect(() => {
+    const update = () => {
+      const distance = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
+      setNearBottom(distance < 260);
+    };
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    return () => window.removeEventListener('scroll', update);
+  }, []);
 
   const months = useMemo(() => {
     const unique = [...new Set(sessions.map((session) => monthKey(session.start_time)))];
@@ -62,12 +73,12 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
   return (
     <div className="space-y-4">
       <div className="relative">
-        <Search className="pointer-events-none absolute left-5 top-1/2 -translate-y-1/2 text-white/35" size={17} />
+        <Search className="pointer-events-none absolute left-6 top-1/2 -translate-y-1/2 text-white/35" size={17} />
         <input
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="Поиск по заметкам, типу, дате"
-          className="input h-14 pl-14"
+          className="input h-14 pl-16"
         />
       </div>
 
@@ -158,22 +169,14 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
       )}
 
       <SessionModal open={Boolean(editing)} mode="edit" session={editing} onClose={() => setEditing(null)} onSave={saveSession} />
-      <div className="fixed bottom-28 right-[max(1rem,calc((100vw-28rem)/2+1rem))] z-30 grid gap-2">
+      <div className="fixed bottom-28 right-[max(1rem,calc((100vw-28rem)/2+1rem))] z-30">
         <button
           type="button"
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="grid h-12 w-12 place-items-center rounded-full border border-white/12 bg-panel/90 text-mint shadow-soft backdrop-blur-2xl active:scale-95"
-          title="Вверх"
+          onClick={() => window.scrollTo({ top: nearBottom ? 0 : document.documentElement.scrollHeight, behavior: 'smooth' })}
+          className="grid h-13 w-13 place-items-center rounded-full border border-white/15 bg-panel/92 text-mint shadow-soft backdrop-blur-2xl active:scale-95"
+          title={nearBottom ? 'Вверх' : 'Вниз'}
         >
-          <ArrowUp size={19} />
-        </button>
-        <button
-          type="button"
-          onClick={() => window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' })}
-          className="grid h-12 w-12 place-items-center rounded-full border border-white/12 bg-panel/90 text-sky shadow-soft backdrop-blur-2xl active:scale-95"
-          title="Вниз"
-        >
-          <ArrowDown size={19} />
+          {nearBottom ? <ArrowUp size={21} /> : <ArrowDown size={21} />}
         </button>
       </div>
     </div>

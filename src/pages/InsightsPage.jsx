@@ -1,4 +1,4 @@
-import { Brain, HeartPulse, TrendingUp } from 'lucide-react';
+import { Brain, Calculator, HeartPulse, TrendingUp } from 'lucide-react';
 import { GlassCard } from '../components/GlassCard';
 import { buildInsights } from '../utils/analytics';
 
@@ -24,6 +24,21 @@ export function InsightsPage({ sessions, activeSession, settings }) {
           <Score label="Риск выгорания" value={insights.burnoutScore} tone={color} />
           <Score label="Усталость" value={insights.fatigueScore} tone="text-amber" />
           <Score label="Продуктивность" value={insights.productivity} tone="text-mint" />
+        </div>
+        <div className="mt-4 rounded-2xl border border-white/8 bg-black/15 p-3 text-xs leading-5 text-white/50">
+          Оценка считается за последние 14 дней: средняя смена, доля переработок, дни подряд и доля выходных.
+        </div>
+      </GlassCard>
+
+      <GlassCard>
+        <div className="flex items-center gap-2">
+          <Calculator size={18} className="text-mint" />
+          <h3 className="font-semibold">Формула оценки</h3>
+        </div>
+        <div className="mt-4 grid gap-2 text-sm leading-6 text-white/62">
+          <p>Усталость = часы выше порога + доля переработок + длинная серия - выходные.</p>
+          <p>Риск выгорания = усталость + мало выходных + переработки + длинная серия.</p>
+          <p>Продуктивность снижается, когда усталость и переработки растут.</p>
         </div>
       </GlassCard>
 
