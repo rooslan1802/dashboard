@@ -22,7 +22,7 @@ export function SettingsPage({ settings, updateSettings, clearHistory, refresh, 
     const file = event.target.files?.[0];
     if (!file) return;
     try {
-      sessionStore.importData(await file.text());
+      await sessionStore.importData(await file.text());
       await refresh();
       showToast('Резервная копия восстановлена');
     } catch {

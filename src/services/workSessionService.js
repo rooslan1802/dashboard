@@ -87,11 +87,19 @@ export const sessionStore = {
     );
   },
 
-  importData(payload) {
+  async importData(payload) {
     const parsed = JSON.parse(payload);
-    this.saveLocalSessions(parsed.sessions || []);
+    const sessions = sortSessions((parsed.sessions || []).map(mapSession));
+    this.saveLocalSessions(sessions);
     this.setActiveSession(parsed.activeSession || null);
     this.saveSettings({ ...this.getSettings(), ...(parsed.settings || {}) });
+
+    if (supabase && navigator.onLine && sessions.length) {
+      const { error } = await supabase.from('work_sessions').upsert(sessions);
+      if (error) queueMutation({ type: 'upsert', payload: sessions });
+    } else if (sessions.length) {
+      queueMutation({ type: 'upsert', payload: sessions });
+    }
   },
 
   async syncQueue() {
