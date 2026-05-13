@@ -73,13 +73,13 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
   return (
     <div className="space-y-4">
       <div className="relative">
-        <Search className="pointer-events-none absolute left-6 top-1/2 -translate-y-1/2 text-white/35" size={17} />
         <input
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="Поиск по заметкам, типу, дате"
-          className="input h-14 pl-16"
+          className="input h-14 pl-6 pr-14"
         />
+        <Search className="pointer-events-none absolute right-5 top-1/2 -translate-y-1/2 text-white/35" size={18} />
       </div>
 
       <div className="flex gap-2 overflow-x-auto pb-1">
@@ -173,10 +173,10 @@ export function HistoryPage({ sessions, settings, saveSession, deleteSession }) 
         <button
           type="button"
           onClick={() => window.scrollTo({ top: nearBottom ? 0 : document.documentElement.scrollHeight, behavior: 'smooth' })}
-          className="grid h-13 w-13 place-items-center rounded-full border border-white/15 bg-panel/92 text-mint shadow-soft backdrop-blur-2xl active:scale-95"
+          className="grid h-16 w-16 place-items-center rounded-full border border-white/20 bg-panel/92 text-mint shadow-soft backdrop-blur-2xl ring-1 ring-white/10 active:scale-95"
           title={nearBottom ? 'Вверх' : 'Вниз'}
         >
-          {nearBottom ? <ArrowUp size={21} /> : <ArrowDown size={21} />}
+          {nearBottom ? <ArrowUp size={25} /> : <ArrowDown size={25} />}
         </button>
       </div>
     </div>
