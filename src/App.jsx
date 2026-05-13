@@ -13,8 +13,8 @@ import { ToastStack } from './components/ToastStack';
 const tabs = [
   { id: 'analytics', label: 'Аналитика', icon: BarChart3 },
   { id: 'history', label: 'История', icon: History },
-  { id: 'insights', label: 'Инсайты', icon: Brain },
   { id: 'dashboard', label: 'Главная', icon: Clock3 },
+  { id: 'insights', label: 'Инсайты', icon: Brain },
   { id: 'settings', label: 'Настройки', icon: Settings },
 ];
 
