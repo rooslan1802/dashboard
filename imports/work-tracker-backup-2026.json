@@ -1,7 +1,7 @@
 {
   "sessions": [
     {
-      "id": "2026-01-05-0",
+      "id": "261cb1bc-c966-45a7-9e69-cc66086683fa",
       "start_time": "2026-01-05T06:00:00.000Z",
       "end_time": "2026-01-05T15:00:00.000Z",
       "total_hours": 9,
@@ -13,7 +13,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-06-0",
+      "id": "1a1abdf8-1341-4673-92aa-fe3e9810ccd6",
       "start_time": "2026-01-06T05:00:00.000Z",
       "end_time": "2026-01-06T16:00:00.000Z",
       "total_hours": 11,
@@ -25,7 +25,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-07-0",
+      "id": "1f8e2240-4397-49fe-835e-b14128fed2ec",
       "start_time": "2026-01-07T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -37,7 +37,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-08-0",
+      "id": "232802ce-3ed1-4208-8f77-c46583e2f176",
       "start_time": "2026-01-08T05:00:00.000Z",
       "end_time": "2026-01-08T14:00:00.000Z",
       "total_hours": 9,
@@ -49,7 +49,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-09-0",
+      "id": "a20f7d7d-12a7-4b22-9dad-15b3d8e2e96f",
       "start_time": "2026-01-09T04:40:00.000Z",
       "end_time": "2026-01-09T15:00:00.000Z",
       "total_hours": 10.33,
@@ -61,7 +61,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-10-0",
+      "id": "7b5cb905-b897-4d04-9fa5-3e66ecd94d14",
       "start_time": "2026-01-10T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -73,7 +73,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-11-0",
+      "id": "0f48db3c-f75c-4d5c-9635-abaddf271724",
       "start_time": "2026-01-11T11:00:00.000Z",
       "end_time": "2026-01-11T15:00:00.000Z",
       "total_hours": 4,
@@ -85,7 +85,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-12-0",
+      "id": "5448ccde-c47c-461b-8984-522555a2a33d",
       "start_time": "2026-01-12T04:30:00.000Z",
       "end_time": "2026-01-12T12:00:00.000Z",
       "total_hours": 7.5,
@@ -97,7 +97,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-13-0",
+      "id": "ef15184d-27ca-4f77-b700-8c46a83ac622",
       "start_time": "2026-01-13T04:30:00.000Z",
       "end_time": "2026-01-13T13:00:00.000Z",
       "total_hours": 8.5,
@@ -109,7 +109,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-14-0",
+      "id": "3b4fa36f-5a2d-45a3-8b44-e06029b395d8",
       "start_time": "2026-01-14T04:20:00.000Z",
       "end_time": "2026-01-14T15:00:00.000Z",
       "total_hours": 10.67,
@@ -121,7 +121,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-15-0",
+      "id": "e03394b3-0e27-4ecf-b5b2-b7d65d4231d7",
       "start_time": "2026-01-15T05:30:00.000Z",
       "end_time": "2026-01-15T11:00:00.000Z",
       "total_hours": 5.5,
@@ -133,7 +133,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-16-0",
+      "id": "6e40f37c-214f-43b3-b72f-f99ec784c926",
       "start_time": "2026-01-16T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -145,7 +145,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-17-0",
+      "id": "d2840ce6-c6ab-4f3e-a121-e41c01dc0501",
       "start_time": "2026-01-17T06:00:00.000Z",
       "end_time": "2026-01-17T13:30:00.000Z",
       "total_hours": 7.5,
@@ -157,7 +157,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-18-0",
+      "id": "7459ef53-430f-4514-8583-920e2cf6ee31",
       "start_time": "2026-01-18T07:30:00.000Z",
       "end_time": "2026-01-18T14:00:00.000Z",
       "total_hours": 6.5,
@@ -169,7 +169,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-19-0",
+      "id": "945a79e0-8046-4a98-bb51-8b96343df537",
       "start_time": "2026-01-19T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -181,7 +181,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-20-0",
+      "id": "61b09f3a-2a47-4ae6-92cf-10dff6740a88",
       "start_time": "2026-01-20T07:00:00.000Z",
       "end_time": "2026-01-20T15:00:00.000Z",
       "total_hours": 8,
@@ -193,7 +193,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-21-0",
+      "id": "67e99ed0-f9a7-4bb9-94be-0ebd1ff6e041",
       "start_time": "2026-01-21T06:00:00.000Z",
       "end_time": "2026-01-21T13:00:00.000Z",
       "total_hours": 7,
@@ -205,7 +205,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-22-0",
+      "id": "7d181663-5caa-489f-8d42-75bb09c18df5",
       "start_time": "2026-01-22T05:00:00.000Z",
       "end_time": "2026-01-22T13:00:00.000Z",
       "total_hours": 8,
@@ -217,7 +217,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-23-0",
+      "id": "3c9693b5-ba6c-40eb-8be0-82fcee043c23",
       "start_time": "2026-01-23T05:15:00.000Z",
       "end_time": "2026-01-23T14:00:00.000Z",
       "total_hours": 8.75,
@@ -229,7 +229,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-24-0",
+      "id": "d6901657-966f-46b1-821e-323236ec55b1",
       "start_time": "2026-01-24T07:30:00.000Z",
       "end_time": "2026-01-24T14:00:00.000Z",
       "total_hours": 6.5,
@@ -241,7 +241,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-25-0",
+      "id": "c187bc1f-ed6b-468f-b5e0-cd52c373bdba",
       "start_time": "2026-01-25T07:00:00.000Z",
       "end_time": "2026-01-25T14:00:00.000Z",
       "total_hours": 7,
@@ -253,7 +253,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-26-0",
+      "id": "a2287ba6-3c53-4cf9-ab6c-20c2c2df3a1a",
       "start_time": "2026-01-26T04:30:00.000Z",
       "end_time": "2026-01-26T12:30:00.000Z",
       "total_hours": 8,
@@ -265,7 +265,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-27-0",
+      "id": "9c0d70e4-2dce-456c-ad85-602b295aa16b",
       "start_time": "2026-01-27T06:30:00.000Z",
       "end_time": "2026-01-27T13:30:00.000Z",
       "total_hours": 7,
@@ -277,7 +277,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-28-0",
+      "id": "d03b4387-0e17-4d5c-a166-ec8dc0feed37",
       "start_time": "2026-01-28T07:00:00.000Z",
       "end_time": "2026-01-28T14:00:00.000Z",
       "total_hours": 7,
@@ -289,7 +289,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-29-0",
+      "id": "2363bed0-939c-4344-bbe0-eb245805ed7f",
       "start_time": "2026-01-29T04:00:00.000Z",
       "end_time": "2026-01-29T11:00:00.000Z",
       "total_hours": 7,
@@ -301,7 +301,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-30-0",
+      "id": "ea42f146-3bf7-4a75-91c2-98ee8a50387c",
       "start_time": "2026-01-30T08:40:00.000Z",
       "end_time": "2026-01-30T13:00:00.000Z",
       "total_hours": 4.33,
@@ -313,7 +313,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-01-31-0",
+      "id": "b314e595-387b-4c01-9c48-22b45d03a804",
       "start_time": "2026-01-31T06:20:00.000Z",
       "end_time": "2026-01-31T14:00:00.000Z",
       "total_hours": 7.67,
@@ -325,7 +325,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-01-0",
+      "id": "e4f47dbc-a0b6-49d2-ac19-efd4aa0f3da0",
       "start_time": "2026-02-01T06:15:00.000Z",
       "end_time": "2026-02-01T14:00:00.000Z",
       "total_hours": 7.75,
@@ -337,7 +337,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-02-0",
+      "id": "e355bf8f-00c0-4aee-a808-703319e5f05c",
       "start_time": "2026-02-02T07:00:00.000Z",
       "end_time": "2026-02-02T12:00:00.000Z",
       "total_hours": 5,
@@ -349,7 +349,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-03-0",
+      "id": "1d381bb0-ac10-4775-bdbd-ad02c2627fcd",
       "start_time": "2026-02-03T08:00:00.000Z",
       "end_time": "2026-02-03T15:00:00.000Z",
       "total_hours": 7,
@@ -361,7 +361,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-04-0",
+      "id": "ae952313-7e53-4779-a5d1-a54af16a20ff",
       "start_time": "2026-02-04T04:00:00.000Z",
       "end_time": "2026-02-04T14:00:00.000Z",
       "total_hours": 10,
@@ -373,7 +373,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-05-0",
+      "id": "72a2648f-3e2a-4dac-91b3-59d12f95c47c",
       "start_time": "2026-02-05T06:00:00.000Z",
       "end_time": "2026-02-05T15:00:00.000Z",
       "total_hours": 9,
@@ -385,7 +385,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-06-0",
+      "id": "96815429-cb2d-4709-ba78-ec054ab34201",
       "start_time": "2026-02-06T08:00:00.000Z",
       "end_time": "2026-02-06T15:00:00.000Z",
       "total_hours": 7,
@@ -397,7 +397,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-07-0",
+      "id": "2211ebed-3fc7-4fc0-8e4b-010253673d1e",
       "start_time": "2026-02-07T07:00:00.000Z",
       "end_time": "2026-02-07T14:00:00.000Z",
       "total_hours": 7,
@@ -409,7 +409,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-08-0",
+      "id": "45e80a03-ba81-459e-925f-ef8d648de3e9",
       "start_time": "2026-02-08T07:00:00.000Z",
       "end_time": "2026-02-08T14:00:00.000Z",
       "total_hours": 7,
@@ -421,7 +421,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-09-0",
+      "id": "c20de6df-104d-4f8a-88bf-a962840e74eb",
       "start_time": "2026-02-09T08:00:00.000Z",
       "end_time": "2026-02-09T13:30:00.000Z",
       "total_hours": 5.5,
@@ -433,7 +433,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-10-0",
+      "id": "fa4e4b6d-39a7-42ed-9975-2a54e35feff4",
       "start_time": "2026-02-10T05:30:00.000Z",
       "end_time": "2026-02-10T10:30:00.000Z",
       "total_hours": 5,
@@ -445,7 +445,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-11-0",
+      "id": "9780539f-18d7-4896-a222-a8fad1d53d24",
       "start_time": "2026-02-11T05:20:00.000Z",
       "end_time": "2026-02-11T11:00:00.000Z",
       "total_hours": 5.67,
@@ -457,7 +457,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-12-0",
+      "id": "1b95b014-5d57-4e74-a133-07b29b64ae0c",
       "start_time": "2026-02-12T07:00:00.000Z",
       "end_time": "2026-02-12T13:00:00.000Z",
       "total_hours": 6,
@@ -469,7 +469,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-13-0",
+      "id": "6645949c-a005-499f-8167-0dfb8fbc6d08",
       "start_time": "2026-02-13T07:00:00.000Z",
       "end_time": "2026-02-13T12:00:00.000Z",
       "total_hours": 5,
@@ -481,7 +481,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-14-0",
+      "id": "77c5c131-c5f5-4c2a-9b36-6a0b7a0d5632",
       "start_time": "2026-02-14T05:00:00.000Z",
       "end_time": "2026-02-14T15:00:00.000Z",
       "total_hours": 10,
@@ -493,7 +493,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-15-0",
+      "id": "51d469aa-9473-447d-80be-b6032b5b0076",
       "start_time": "2026-02-15T06:00:00.000Z",
       "end_time": "2026-02-15T16:00:00.000Z",
       "total_hours": 10,
@@ -505,7 +505,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-16-0",
+      "id": "2e34f221-13aa-43a6-85d0-84266218f4b8",
       "start_time": "2026-02-16T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -517,7 +517,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-17-0",
+      "id": "3061f899-81e4-4b7f-abe6-8beb1dbcb6bc",
       "start_time": "2026-02-17T07:00:00.000Z",
       "end_time": "2026-02-17T12:00:00.000Z",
       "total_hours": 5,
@@ -529,7 +529,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-18-0",
+      "id": "3de7d46b-4bdb-48f7-a12f-54cff9bbee49",
       "start_time": "2026-02-18T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -541,7 +541,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-19-0",
+      "id": "04b5f5ce-595a-4e3e-9c2c-0be189a6e437",
       "start_time": "2026-02-19T07:30:00.000Z",
       "end_time": "2026-02-19T12:00:00.000Z",
       "total_hours": 4.5,
@@ -553,7 +553,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-20-0",
+      "id": "fc9039d7-25b5-40ff-b842-48af06c400c6",
       "start_time": "2026-02-20T08:50:00.000Z",
       "end_time": "2026-02-20T13:00:00.000Z",
       "total_hours": 4.17,
@@ -565,7 +565,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-21-0",
+      "id": "6015651d-dbd6-4740-9798-c415b654e5c5",
       "start_time": "2026-02-21T05:40:00.000Z",
       "end_time": "2026-02-21T15:00:00.000Z",
       "total_hours": 9.33,
@@ -577,7 +577,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-22-0",
+      "id": "e5ac5fec-05e7-49a5-9d3f-dc0e3f508c07",
       "start_time": "2026-02-22T08:40:00.000Z",
       "end_time": "2026-02-22T16:00:00.000Z",
       "total_hours": 7.33,
@@ -589,7 +589,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-23-0",
+      "id": "26bcf875-50e0-42ee-a731-f15f192f06b6",
       "start_time": "2026-02-23T09:00:00.000Z",
       "end_time": "2026-02-23T12:00:00.000Z",
       "total_hours": 3,
@@ -601,7 +601,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-24-0",
+      "id": "b4bfbe2d-8938-4801-8901-0af8af54dba8",
       "start_time": "2026-02-24T06:00:00.000Z",
       "end_time": "2026-02-24T11:00:00.000Z",
       "total_hours": 5,
@@ -613,7 +613,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-25-0",
+      "id": "058e7344-33bd-41e5-9712-1ded17625ea2",
       "start_time": "2026-02-25T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -625,7 +625,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-26-0",
+      "id": "20735ce0-3f31-45a8-8034-23f0481825e1",
       "start_time": "2026-02-26T07:00:00.000Z",
       "end_time": "2026-02-26T13:00:00.000Z",
       "total_hours": 6,
@@ -637,7 +637,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-27-0",
+      "id": "85d0dd2a-014d-4c44-8060-6df218b485a5",
       "start_time": "2026-02-27T07:00:00.000Z",
       "end_time": "2026-02-27T13:00:00.000Z",
       "total_hours": 6,
@@ -649,7 +649,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-02-28-0",
+      "id": "e5b77ca5-3221-46d8-8d1f-f2176a52897c",
       "start_time": "2026-02-28T05:30:00.000Z",
       "end_time": "2026-02-28T15:30:00.000Z",
       "total_hours": 10,
@@ -661,7 +661,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-01-0",
+      "id": "8335ceb1-fed5-4bd3-b767-a1eaf37b0ca9",
       "start_time": "2026-03-01T06:30:00.000Z",
       "end_time": "2026-03-01T16:00:00.000Z",
       "total_hours": 9.5,
@@ -673,7 +673,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-02-0",
+      "id": "0a90254c-b22e-423b-938c-5a1787b89329",
       "start_time": "2026-03-02T08:00:00.000Z",
       "end_time": "2026-03-02T14:30:00.000Z",
       "total_hours": 6.5,
@@ -685,7 +685,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-03-0",
+      "id": "c3de4e62-aace-437a-b6c5-29525ded565e",
       "start_time": "2026-03-03T08:00:00.000Z",
       "end_time": "2026-03-03T14:30:00.000Z",
       "total_hours": 6.5,
@@ -697,7 +697,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-04-0",
+      "id": "d7e7b35d-50ac-417f-8220-f3243423672d",
       "start_time": "2026-03-04T07:00:00.000Z",
       "end_time": "2026-03-04T15:00:00.000Z",
       "total_hours": 8,
@@ -709,7 +709,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-05-0",
+      "id": "303488c2-eefa-4b85-b216-be9203dc62d7",
       "start_time": "2026-03-05T05:00:00.000Z",
       "end_time": "2026-03-05T13:00:00.000Z",
       "total_hours": 8,
@@ -721,7 +721,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-06-0",
+      "id": "6b09876d-5e7a-47db-9262-a8c8e2c512c5",
       "start_time": "2026-03-06T05:00:00.000Z",
       "end_time": "2026-03-06T13:00:00.000Z",
       "total_hours": 8,
@@ -733,7 +733,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-07-0",
+      "id": "271616c1-1293-48e9-aa65-f351eeebecc9",
       "start_time": "2026-03-07T09:00:00.000Z",
       "end_time": "2026-03-07T15:00:00.000Z",
       "total_hours": 6,
@@ -745,7 +745,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-08-0",
+      "id": "b4b352cf-347a-487b-903d-923f260c223f",
       "start_time": "2026-03-08T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -757,7 +757,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-09-0",
+      "id": "55e909fa-ee91-483d-82bf-ca5aa6eb6b62",
       "start_time": "2026-03-09T09:10:00.000Z",
       "end_time": "2026-03-09T15:30:00.000Z",
       "total_hours": 6.33,
@@ -769,7 +769,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-10-0",
+      "id": "376b0592-efcf-4b72-9120-c6df2f0a0bce",
       "start_time": "2026-03-10T07:30:00.000Z",
       "end_time": "2026-03-10T14:00:00.000Z",
       "total_hours": 6.5,
@@ -781,7 +781,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-11-0",
+      "id": "0a567c3a-9729-4da7-8e01-5e7a9ee4fc77",
       "start_time": "2026-03-11T10:00:00.000Z",
       "end_time": "2026-03-11T12:00:00.000Z",
       "total_hours": 2,
@@ -793,7 +793,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-12-0",
+      "id": "9a22c65a-275f-4cc9-8c5f-da660e3e9214",
       "start_time": "2026-03-12T10:00:00.000Z",
       "end_time": "2026-03-12T13:00:00.000Z",
       "total_hours": 3,
@@ -805,7 +805,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-13-0",
+      "id": "46ee735f-24ec-4af8-8dcc-9bbb77a94569",
       "start_time": "2026-03-13T07:00:00.000Z",
       "end_time": "2026-03-13T14:00:00.000Z",
       "total_hours": 7,
@@ -817,7 +817,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-14-0",
+      "id": "b5f3a85e-20cb-4a60-a57d-b16bdd1344f9",
       "start_time": "2026-03-14T06:20:00.000Z",
       "end_time": "2026-03-14T15:00:00.000Z",
       "total_hours": 8.67,
@@ -829,7 +829,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-15-0",
+      "id": "87d5266c-7968-4486-8e0e-edc0a2fca864",
       "start_time": "2026-03-15T08:00:00.000Z",
       "end_time": "2026-03-15T13:00:00.000Z",
       "total_hours": 5,
@@ -841,7 +841,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-16-0",
+      "id": "90ad52a1-0417-41b3-a3c3-31ac64b8bcc4",
       "start_time": "2026-03-16T05:30:00.000Z",
       "end_time": "2026-03-16T09:00:00.000Z",
       "total_hours": 3.5,
@@ -853,7 +853,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-17-0",
+      "id": "90fd511a-86de-4c28-84f3-3a8a16aa91a3",
       "start_time": "2026-03-17T05:00:00.000Z",
       "end_time": "2026-03-17T13:00:00.000Z",
       "total_hours": 8,
@@ -865,7 +865,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-18-0",
+      "id": "220158ea-2383-45c1-ab90-bcdd273d3baf",
       "start_time": "2026-03-18T05:00:00.000Z",
       "end_time": "2026-03-18T13:00:00.000Z",
       "total_hours": 8,
@@ -877,7 +877,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-19-0",
+      "id": "cf9119dd-2980-4792-91cb-9c9e668c7d47",
       "start_time": "2026-03-19T08:30:00.000Z",
       "end_time": "2026-03-19T15:00:00.000Z",
       "total_hours": 6.5,
@@ -889,7 +889,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-20-0",
+      "id": "df099dd6-1b4f-4565-a784-ab2109388b14",
       "start_time": "2026-03-20T07:00:00.000Z",
       "end_time": "2026-03-20T13:00:00.000Z",
       "total_hours": 6,
@@ -901,7 +901,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-21-0",
+      "id": "a5925b84-9ee9-475f-9b35-e43effdc927a",
       "start_time": "2026-03-21T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -913,7 +913,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-22-0",
+      "id": "cfc3b04a-fe78-4522-94ae-6e49e9ca388e",
       "start_time": "2026-03-22T08:30:00.000Z",
       "end_time": "2026-03-22T15:00:00.000Z",
       "total_hours": 6.5,
@@ -925,7 +925,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-23-0",
+      "id": "2349519b-a788-4d07-bedc-269a8f9c3d79",
       "start_time": "2026-03-23T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -937,7 +937,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-24-0",
+      "id": "b4284010-214e-443a-b3ef-e634dbd67a0e",
       "start_time": "2026-03-24T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -949,7 +949,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-25-0",
+      "id": "6c9ae4c1-9b9e-4ca2-a7f3-2e4692e08548",
       "start_time": "2026-03-25T04:00:00.000Z",
       "end_time": "2026-03-25T09:00:00.000Z",
       "total_hours": 5,
@@ -961,7 +961,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-26-0",
+      "id": "36ed3efb-21d8-4689-9c4e-99efd578acc2",
       "start_time": "2026-03-26T04:00:00.000Z",
       "end_time": "2026-03-26T14:30:00.000Z",
       "total_hours": 10.5,
@@ -973,7 +973,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-27-0",
+      "id": "4d910e82-03eb-49a1-bf1c-9f97ace1fbe6",
       "start_time": "2026-03-27T04:00:00.000Z",
       "end_time": "2026-03-27T16:30:00.000Z",
       "total_hours": 12.5,
@@ -985,7 +985,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-28-0",
+      "id": "1ea5a845-4ac7-4fb1-a401-812704c3df66",
       "start_time": "2026-03-28T09:00:00.000Z",
       "end_time": "2026-03-28T15:30:00.000Z",
       "total_hours": 6.5,
@@ -997,7 +997,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-29-0",
+      "id": "66f670e8-a077-43d8-ab21-bcf7c53c41c1",
       "start_time": "2026-03-29T12:00:00.000Z",
       "end_time": "2026-03-29T15:30:00.000Z",
       "total_hours": 3.5,
@@ -1009,7 +1009,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-30-0",
+      "id": "78a94f7e-49c0-497a-94e8-82ed62f37975",
       "start_time": "2026-03-30T05:00:00.000Z",
       "end_time": "2026-03-30T14:00:00.000Z",
       "total_hours": 9,
@@ -1021,7 +1021,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-03-31-0",
+      "id": "c418f1f6-6cb8-4c24-bee2-558fc3c1bd7e",
       "start_time": "2026-03-31T07:30:00.000Z",
       "end_time": "2026-03-31T15:00:00.000Z",
       "total_hours": 7.5,
@@ -1033,7 +1033,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-01-0",
+      "id": "311d167d-e0f4-452c-823f-c4cd074f859b",
       "start_time": "2026-04-01T07:30:00.000Z",
       "end_time": "2026-04-01T14:30:00.000Z",
       "total_hours": 7,
@@ -1045,7 +1045,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-02-0",
+      "id": "bd8300a6-1cef-4439-8065-193e1f1d4467",
       "start_time": "2026-04-02T06:00:00.000Z",
       "end_time": "2026-04-02T11:30:00.000Z",
       "total_hours": 5.5,
@@ -1057,7 +1057,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-03-0",
+      "id": "65a12f4b-3ea1-446e-9068-e2ef90aa7dd8",
       "start_time": "2026-04-03T07:30:00.000Z",
       "end_time": "2026-04-03T12:00:00.000Z",
       "total_hours": 4.5,
@@ -1069,7 +1069,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-04-0",
+      "id": "2b3ba6b7-1937-4df2-913f-2236bdf893c0",
       "start_time": "2026-04-04T05:00:00.000Z",
       "end_time": "2026-04-04T15:00:00.000Z",
       "total_hours": 10,
@@ -1081,7 +1081,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-05-0",
+      "id": "f0bfa11f-3ed1-42d5-8360-42b9cf018d0d",
       "start_time": "2026-04-05T07:30:00.000Z",
       "end_time": "2026-04-05T15:00:00.000Z",
       "total_hours": 7.5,
@@ -1093,7 +1093,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-06-0",
+      "id": "dfedb7cb-d7f8-4a7b-83a0-86cd55ed784f",
       "start_time": "2026-04-06T05:30:00.000Z",
       "end_time": "2026-04-06T13:00:00.000Z",
       "total_hours": 7.5,
@@ -1105,7 +1105,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-07-0",
+      "id": "a60e4592-b294-47f6-9a9b-b9389cf10489",
       "start_time": "2026-04-07T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -1117,7 +1117,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-08-0",
+      "id": "25ff45af-b24d-4a51-87e3-a6237edfb4fa",
       "start_time": "2026-04-08T06:30:00.000Z",
       "end_time": "2026-04-08T14:00:00.000Z",
       "total_hours": 7.5,
@@ -1129,7 +1129,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-09-0",
+      "id": "3c46de56-79c8-4756-9d25-13afa0485c04",
       "start_time": "2026-04-09T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -1141,7 +1141,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-10-0",
+      "id": "9b41b0f8-64b5-465b-8fd7-ea9eff1f861d",
       "start_time": "2026-04-10T07:30:00.000Z",
       "end_time": "2026-04-10T11:30:00.000Z",
       "total_hours": 4,
@@ -1153,7 +1153,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-11-0",
+      "id": "5631314c-af12-44d7-bd92-c0d3b7a50569",
       "start_time": "2026-04-11T09:00:00.000Z",
       "end_time": "2026-04-11T13:00:00.000Z",
       "total_hours": 4,
@@ -1165,7 +1165,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-12-0",
+      "id": "a3a4f1e9-1564-43e9-b5c6-9b3b81d25553",
       "start_time": "2026-04-12T07:15:00.000Z",
       "end_time": "2026-04-12T15:00:00.000Z",
       "total_hours": 7.75,
@@ -1177,7 +1177,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-13-0",
+      "id": "831a6ae2-c02d-4bb4-b130-0f6bffa10d81",
       "start_time": "2026-04-13T07:30:00.000Z",
       "end_time": "2026-04-13T11:30:00.000Z",
       "total_hours": 4,
@@ -1189,7 +1189,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-14-0",
+      "id": "92986d60-f7a2-42ae-aec2-63c81e41e716",
       "start_time": "2026-04-14T07:10:00.000Z",
       "end_time": "2026-04-14T13:00:00.000Z",
       "total_hours": 5.83,
@@ -1201,7 +1201,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-15-0",
+      "id": "69637376-a129-47e5-aa73-964097c47b43",
       "start_time": "2026-04-15T07:00:00.000Z",
       "end_time": "2026-04-15T11:00:00.000Z",
       "total_hours": 4,
@@ -1213,7 +1213,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-16-0",
+      "id": "222fddd5-6a5c-4d91-ac14-67c4490ba52c",
       "start_time": "2026-04-16T08:00:00.000Z",
       "end_time": "2026-04-16T15:00:00.000Z",
       "total_hours": 7,
@@ -1225,7 +1225,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-17-0",
+      "id": "83b831f9-d7bb-4998-aa93-cf6681b84aa9",
       "start_time": "2026-04-17T09:00:00.000Z",
       "end_time": "2026-04-17T15:00:00.000Z",
       "total_hours": 6,
@@ -1237,7 +1237,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-18-0",
+      "id": "d5461cb4-c807-4af6-9440-dc9b50c44f73",
       "start_time": "2026-04-18T08:30:00.000Z",
       "end_time": "2026-04-18T15:00:00.000Z",
       "total_hours": 6.5,
@@ -1249,7 +1249,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-19-0",
+      "id": "231f1630-3034-4e25-8cca-54988528fd5a",
       "start_time": "2026-04-19T05:00:00.000Z",
       "end_time": "2026-04-19T07:00:00.000Z",
       "total_hours": 2,
@@ -1261,7 +1261,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-20-0",
+      "id": "252c7e91-e718-4e46-b516-fbc887a117b8",
       "start_time": "2026-04-20T07:00:00.000Z",
       "end_time": "2026-04-20T14:30:00.000Z",
       "total_hours": 7.5,
@@ -1273,7 +1273,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-21-0",
+      "id": "ee11cb9c-08c3-4a5c-b737-2500413cc606",
       "start_time": "2026-04-21T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -1285,7 +1285,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-22-0",
+      "id": "fb6b511e-f541-443f-848e-05737cc9f766",
       "start_time": "2026-04-22T11:00:00.000Z",
       "end_time": "2026-04-22T15:30:00.000Z",
       "total_hours": 4.5,
@@ -1297,7 +1297,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-23-0",
+      "id": "da7d693b-8e27-4b22-b72a-f0e2f5f6a958",
       "start_time": "2026-04-23T07:30:00.000Z",
       "end_time": "2026-04-23T12:00:00.000Z",
       "total_hours": 4.5,
@@ -1309,7 +1309,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-24-0",
+      "id": "5c128e1f-b050-4f5f-8442-a3f31728fffb",
       "start_time": "2026-04-24T07:00:00.000Z",
       "end_time": "2026-04-24T12:00:00.000Z",
       "total_hours": 5,
@@ -1321,7 +1321,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-25-0",
+      "id": "51d0c528-d8aa-4f38-90bb-3ea46b61fc5a",
       "start_time": "2026-04-25T04:30:00.000Z",
       "end_time": "2026-04-25T15:00:00.000Z",
       "total_hours": 10.5,
@@ -1333,7 +1333,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-26-0",
+      "id": "36da83b9-7f39-4086-a9b8-8dc120dde295",
       "start_time": "2026-04-26T04:30:00.000Z",
       "end_time": "2026-04-26T15:00:00.000Z",
       "total_hours": 10.5,
@@ -1345,7 +1345,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-27-0",
+      "id": "93443456-fcc7-4be0-b5b1-aa788c070ac3",
       "start_time": "2026-04-27T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -1357,7 +1357,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-28-0",
+      "id": "379f6a3b-3c68-46d6-b1ad-8019e719fa3a",
       "start_time": "2026-04-28T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -1369,7 +1369,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-29-0",
+      "id": "0caff122-3f36-4ed4-9727-6db76df3f026",
       "start_time": "2026-04-29T08:30:00.000Z",
       "end_time": "2026-04-29T14:00:00.000Z",
       "total_hours": 5.5,
@@ -1381,7 +1381,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-04-30-0",
+      "id": "bd4b4b5e-11f2-4f1f-bf30-5b88c6e725ab",
       "start_time": "2026-04-30T09:30:00.000Z",
       "end_time": "2026-04-30T14:30:00.000Z",
       "total_hours": 5,
@@ -1393,7 +1393,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-01-0",
+      "id": "c7e9dae9-d615-48dd-83a5-3f8014bcf911",
       "start_time": "2026-05-01T06:00:00.000Z",
       "end_time": "2026-05-01T14:30:00.000Z",
       "total_hours": 8.5,
@@ -1405,7 +1405,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-02-0",
+      "id": "5b5de009-c82f-4622-bca1-ea73c06d9d70",
       "start_time": "2026-05-02T06:00:00.000Z",
       "end_time": "2026-05-02T15:00:00.000Z",
       "total_hours": 9,
@@ -1417,7 +1417,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-03-0",
+      "id": "ef0ab2d2-1ee0-4414-bf6d-852e89b158da",
       "start_time": "2026-05-03T12:00:00.000Z",
       "end_time": "2026-05-03T15:00:00.000Z",
       "total_hours": 3,
@@ -1429,7 +1429,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-04-0",
+      "id": "bc943889-9a37-42d5-91c6-f46e8fa74992",
       "start_time": "2026-05-04T06:00:00.000Z",
       "end_time": "2026-05-04T15:00:00.000Z",
       "total_hours": 9,
@@ -1441,7 +1441,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-05-0",
+      "id": "6d8d0d93-5fab-44d6-a8d2-47e3329635b1",
       "start_time": "2026-05-05T05:00:00.000Z",
       "end_time": "2026-05-05T12:00:00.000Z",
       "total_hours": 7,
@@ -1453,7 +1453,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-06-0",
+      "id": "4e2ea3b5-ea9b-43a5-9777-137f32e0c687",
       "start_time": "2026-05-06T08:00:00.000Z",
       "end_time": "2026-05-06T10:30:00.000Z",
       "total_hours": 2.5,
@@ -1465,7 +1465,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-07-0",
+      "id": "e4272dbe-f27f-41fa-b335-cc310456e947",
       "start_time": "2026-05-07T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -1477,7 +1477,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-08-0",
+      "id": "4b10f9f5-6458-4163-a9a2-0c968e2645e4",
       "start_time": "2026-05-08T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -1489,7 +1489,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-09-0",
+      "id": "8c3bc8cc-e973-4eb4-b444-11ac95a09111",
       "start_time": "2026-05-09T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -1501,7 +1501,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-10-0",
+      "id": "9e836391-e669-4a08-85b4-658aebdeded6",
       "start_time": "2026-05-10T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -1513,7 +1513,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-11-0",
+      "id": "060220e0-c63d-411e-8c38-05f790270b88",
       "start_time": "2026-05-11T05:00:00.000Z",
       "end_time": null,
       "total_hours": 0,
@@ -1525,7 +1525,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-12-0",
+      "id": "6ac41210-5233-4945-9329-d13c753f854a",
       "start_time": "2026-05-12T09:00:00.000Z",
       "end_time": "2026-05-12T14:00:00.000Z",
       "total_hours": 5,
@@ -1537,7 +1537,7 @@
       "is_active_session": false
     },
     {
-      "id": "2026-05-13-0",
+      "id": "94e7357c-b1ab-4743-8599-39cadfd604ce",
       "start_time": "2026-05-13T06:00:00.000Z",
       "end_time": "2026-05-13T14:30:00.000Z",
       "total_hours": 8.5,
